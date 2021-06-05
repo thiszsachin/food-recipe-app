@@ -12,7 +12,6 @@ function SearchBar() {
   async function fetchReciepe() {
     const result = await Axios.get(url);
     setRecipes(result.data.hits);
-    console.log(result.data);
   }
 
   const handleSubmit = (e) => {
